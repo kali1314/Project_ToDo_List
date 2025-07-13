@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/612222a6c8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="todo-container">
+        <div class="heading_and_icon">
+            <h1>ToDo List</h1>;
+            <img src="check-list.png" alt="ToDo icon" width="40" height="35">
+        </div>
+
+        <!-- Task Input Form -->
+
+        <form class="input-section" id="taskForm">
+            <input type="text" id="taskinput" placeholder="Add your Task">
+            <button id="gol_button" type="submit" aria-label="Add Task">+</button>
+        </form>
+
+        <!-- Success Message  -->
+        <p class="success-message" id="successMessage"></p>
+
+        <!-- Task List -->
+        <ul class="task-list"></ul>
+        
+    </div>
+
+    <!-- Delete Added Task -->
+
+    <div id="warning-message" class="warning">
+        <div class="delete-content">
+            <p>Are you sure want to delete this task?</p>
+            <div class="delete-actions">
+                <button id="confirmNo">No</button>
+                <button id="confirmYes">Yes</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Compiled TypeScript-->
+    <script src="dest/script.js" defer></script>
+
+</body>
+</html>

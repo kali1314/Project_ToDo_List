@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(244, 240, 236);
+    /* min-height: 100vh; 100% of the browser height */
+    display: flex; /* design in a line*/
+    justify-content: center; 
+    align-items: flex-start;
+    padding: 40px 20px;
+}
+
+/* todo box design */
+.todo-container{
+    background-color: rgb(226, 211, 192);
+    padding: 20px 25px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 12px black;
+}
+
+/* Heading */
+.todo-container h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  margin-left: 8px;
+}
+
+.heading_and_icon {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.input-section{
+  display: flex;
+  gap: 0px;
+  margin-bottom: 10px; 
+
+}
+
+.input-section input {
+  flex: 1;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  outline: none;
+}
+
+.input-section button {
+  background-color: rgb(125, 199, 14);
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  display: flex; 
+  align-items: center;
+   justify-content: center;
+}
+
+.input-section button i {
+  color: white;
+  font-size: 18px;
+}
+
+/* Success message */
+.success-message {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+/* Task list */
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+
+/*  have no code in html but have css property */
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+  margin-bottom: 10px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+.task {
+  transition: all 0.2s ease-in-out;
+}
+.task span {
+  flex: 1;
+}
+
+.task .fa-trash {
+  color: #d11a2a;
+  cursor: pointer;
+}
+
+.task .fa-trash:hover {
+  color: #a30000;
+}
+
+/* Warning message section */
+
+.warning{
+  display: none; 
+  /* Hidden by default */
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);  
+}
+
+.delete-content{
+  background-color: white;
+  padding: 20px 25px;
+  border-radius: 10px;
+  width: 300px;
+  margin: 20% auto;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+
+.delete-actions{
+  display: flex;
+  justify-content: space-around;
+  gap: 15px; 
+}
+
+#gol_button:hover {
+  opacity: 0.8;
+  box-shadow: 0 6px 15px gray;
+}
+
+#gol_button:active {
+  background-color: rgb(34, 216, 34);
+}
+
+.delete-actions button {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#confirmYes {
+  background-color: #d11a2a;
+  color: white;
+}
+
+#confirmNo {
+  background-color: #777;
+  color: white;
+}
+
+#confirmYes:hover {
+  background-color: #b0081c;
+}
+
+#confirmNo:hover {
+  background-color: #555;
+}
